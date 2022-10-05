@@ -1,0 +1,44 @@
+{
+  "samples": [
+    {
+      "sample_id": "",
+      "owner": "",
+      "desired_output": {
+        "verdict": "",
+        "confidence": "",
+        "attack_type": "",
+        "targeted_brand": "",
+        "Impact": [
+          ""
+        ],
+        "Malicious Activity": [
+          ""
+        ],
+        "Suspicious Activity": [
+        ],
+        "Attack Vector": [
+          ""
+        ]
+      },
+      "expected_output": {
+        "verdict": "",
+        "confidence": "",
+        "attack_type": "",
+        "targeted_brand": "",
+        "Impact": [
+          ""
+        ],
+        "Malicious Activity": [
+          ""
+        ],
+        "Suspicious Activity": [
+        ],
+        "Attack Vector": [
+          ""
+        ],
+        "acceptable_result": ""
+      },
+      "notes": "This is a placeholder right now, as we don't yet have any examples here."
+    }
+  ]
+}

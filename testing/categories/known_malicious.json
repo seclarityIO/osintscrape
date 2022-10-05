@@ -1,0 +1,231 @@
+{
+  "samples": [
+    {
+      "sample_id": "6c56ca18ed6147ef89e48011da3a2464",
+      "owner": "modified@seclarity.io",
+      "desired_output": {
+        "verdict": "Impact",
+        "confidence": "High",
+        "attack_type": "Phishing",
+        "targeted_brand": "Microsoft Corporation",
+        "Impact": [
+          "grapyvision.com:443"
+        ],
+        "Malicious Activity": [
+          "amused-mighty-store.glitch.me:443"
+        ],
+        "Suspicious Activity": [
+        ],
+        "Attack Vector": [
+          "Microsoft OneDrive -- Link Loading Behavior"
+        ]
+      },
+      "expected_output": {
+        "verdict": "Malicious Activity",
+        "confidence": "High",
+        "attack_type": "Phishing",
+        "targeted_brand": "Microsoft Corporation",
+        "Impact": [
+        ],
+        "Malicious Activity": [
+          "amused-mighty-store.glitch.me:443"
+        ],
+        "Suspicious Activity": [
+          "152.199.4.33:443"
+        ],
+        "Attack Vector": [
+          "skyapi.onedrive.live.com:443"
+        ],
+        "acceptable_result": "False",
+        "unacceptable_fields": [
+          "verdict",
+          "Impact",
+          "Suspicious Activity"
+        ]
+      },
+      "notes": "This is a manually-detonated sample where I submitted credentials and verified that they went to grapyvision. Right now I'm noticing that grapyvision is being treated as non-malicious, which is bad!"
+    },
+    {
+      "sample_id": "da6e85273aec4c8094e40afe3b563fcf",
+      "owner": "modified@seclarity.io",
+      "desired_output": {
+        "verdict": "Impact",
+        "confidence": "High",
+        "attack_type": "Phishing",
+        "targeted_brand": "Microsoft Corporation",
+        "Impact": [
+          "bosszblinks.com:443"
+        ],
+        "Malicious Activity": [
+          "eminent-difficult-juice.glitch.me:443",
+          "shopget24.com:443"
+        ],
+        "Suspicious Activity": [
+        ],
+        "Attack Vector": [
+        ]
+      },
+      "expected_output": {
+        "verdict": "Impact",
+        "confidence": "Medium",
+        "attack_type": "Phishing",
+        "targeted_brand": "Microsoft Corporation",
+        "Impact": [
+          "bosszblinks.com:443"
+        ],
+        "Malicious Activity": [
+          "eminent-difficult-juice.glitch.me:443"
+        ],
+        "Suspicious Activity": [
+          "shopget24.com:443",
+          "20.50.73.10:443"
+        ],
+        "Attack Vector": [
+          "edgedl.me.gvt1.com:80"
+        ],
+        "acceptable_result": "True",
+        "unacceptable_fields": [
+          "Attack Vector"
+        ]
+      },
+      "notes": "This is a manually-detonated sample where I submitted credentials and verified that they went to bosszblinks. Note that there were templates hosted on shoget24 (which was a compromised site). bosszblinks may also have been a compromised site."
+    },
+    {
+      "sample_id": "b6a34819455941b5a50f33387797f0d6",
+      "owner": "modified@seclarity.io",
+      "desired_output": {
+        "verdict": "Impact",
+        "confidence": "High",
+        "attack_type": "Phishing",
+        "targeted_brand": "Microsoft Corporation",
+        "Impact": [
+          "mmidevnc.net:443"
+        ],
+        "Malicious Activity": [
+          "kifot.wancdnapp.page:443",
+          "wianziasocnds.web.app:443",
+          "young-sun-b33c.patsygarci-a38-3-40-5-0.workers.dev:443"
+        ],
+        "Suspicious Activity": [
+        ],
+        "Attack Vector": [
+          "outlook.office.com:443",
+          "outlook.office365.com:443",
+          "Cutt.ly URL Shortener -- Link Clicked"
+        ]
+      },
+      "expected_output": {
+        "verdict": "Impact",
+        "confidence": "High",
+        "attack_type": "Phishing",
+        "targeted_brand": "Microsoft Corporation",
+        "Impact": [
+          "mmidevnc.net:443"
+        ],
+        "Malicious Activity": [
+          "kifot.wancdnapp.page:443",
+          "wianziasocnds.web.app:443",
+          "young-sun-b33c.patsygarci-a38-3-40-5-0.workers.dev:443"
+        ],
+        "Suspicious Activity": [
+        ],
+        "Attack Vector": [
+          "outlook.office.com:443",
+          "outlook.office365.com:443"
+        ],
+        "acceptable_result": "True",
+        "unacceptable_fields": [
+        ]
+      },
+      "notes": "This is a manually-detonated sample where I loaded my email, clicked on a phishing email that was wrapped in a Cutt.ly link, and submitted credentials (via a portal on young-sun...) to the mmidevnc site."
+    },
+    {
+      "sample_id": "04643bfb75454284b0c9568712fd73cb",
+      "owner": "modified@seclarity.io",
+      "desired_output": {
+        "verdict": "Malicious Activity",
+        "confidence": "High",
+        "attack_type": "Phishing",
+        "targeted_brand": "www[.]53[.]com",
+        "Impact": [
+        ],
+        "Malicious Activity": [
+          "secure610.duckdns.org:443"
+        ],
+        "Suspicious Activity": [
+        ],
+        "Attack Vector": [
+          "Rb.gy URL Shortener",
+          "Bit.ly Link Click -- Potential Redirect Behavior"
+        ]
+      },
+      "expected_output": {
+        "verdict": "Malicious Activity",
+        "confidence": "High",
+        "attack_type": "Phishing",
+        "targeted_brand": "www[.]53[.]com",
+        "Impact": [
+        ],
+        "Malicious Activity": [
+          "secure610.duckdns.org:443"
+        ],
+        "Suspicious Activity": [
+        ],
+        "Attack Vector": [
+        ],
+        "acceptable_result": "True",
+        "unacceptable_fields": [
+          "Attack Vector"
+        ]
+      },
+      "notes": "This is a manually-detonated sample where I entered a Bitly URL into Chrome, and loaded a phishing portal (secure610[.]duckdns) targeting Fifth-Third Bank. I don't believe that I submitted credentials."
+    },
+    {
+      "sample_id": "e679ea801dd14d9682a77134446789fd",
+      "owner": "modified@seclarity.io",
+      "desired_output": {
+        "verdict": "Impact",
+        "confidence": "High",
+        "attack_type": "Exfiltration",
+        "targeted_brand": "",
+        "Impact": [
+          "justinblairinc.com:1980"
+        ],
+        "Malicious Activity": [
+          "xlongphotography.com:443"
+        ],
+        "Suspicious Activity": [
+        ],
+        "Attack Vector": [
+          "store-images.s-microsoft.com:443"
+        ]
+      },
+      "expected_output": {
+        "verdict": "Suspicious Activity",
+        "confidence": "Low",
+        "attack_type": "",
+        "targeted_brand": "",
+        "Impact": [
+        ],
+        "Malicious Activity": [
+        ],
+        "Suspicious Activity": [
+          "justinblairinc.com:1980"
+        ],
+        "Attack Vector": [
+          "store-images.s-microsoft.com:443"
+        ],
+        "acceptable_result": "False",
+        "unacceptable_fields": [
+          "verdict",
+          "confidence",
+          "attack_type",
+          "Impact",
+          "Malicious Activity"
+        ]
+      },
+      "notes": "This is a manually-detonated sample where someone loaded a maldoc that reached out to xlong to pull down Python, then exfiltrated data to justinblair. Details in links from this tweet: https://twitter.com/InQuest/status/1516830721071063043?cxt=HBwWhoC5naPg7owqAAAA&cn=ZmxleGlibGVfcmVjcw%3D%3D"
+    }
+
+  ]
+}

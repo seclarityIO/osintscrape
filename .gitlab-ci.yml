@@ -1,0 +1,24 @@
+variables:
+  DOCKER_REGISTRY: 089920156619.dkr.ecr.us-east-1.amazonaws.com
+  AWS_DEFAULT_REGION: us-east-1
+  APP_NAME: opensource-intelligence-service
+  DOCKER_HOST: tcp://docker:2375
+  CLUSTER_NAME: seclarityCluster
+  #SERVICE_NAME: ConverterToRawSecflowService
+
+publish:
+  image:
+    name: amazon/aws-cli
+    entrypoint: [ "" ]
+  services:
+    - docker:dind
+  before_script:
+    - amazon-linux-extras install docker
+    - docker --version
+    - export GRADLE_USER_HOME=`pwd`/gradle
+
+  script:
+    - docker build -t $DOCKER_REGISTRY/$APP_NAME:latest .
+    - aws ecr get-login-password --region $AWS_DEFAULT_REGION | docker login --username AWS --password-stdin $DOCKER_REGISTRY
+    - docker push $DOCKER_REGISTRY/$APP_NAME:latest
+#    - aws ecs update-service --cluster $CLUSTER_NAME --service $SERVICE_NAME --force-new-deployment  >> /dev/null

@@ -1,0 +1,140 @@
+[
+  {
+    "category": "destinationTags",
+    "humanReadableCategory": "Destination",
+    "hint": "Add tags here if you think this Destination falls into the categories available",
+    "tags": [
+      "URLShortener",
+      "CDN",
+      "FileSharingPlatform",
+      "CloudHostingPlatform",
+      "Tracking",
+      "Banking",
+      "DomainSuspension",
+      "UpdateServers"
+    ]
+  },
+  {
+    "category": "activityPurposeTags",
+    "humanReadableCategory": "Activity Purpose",
+    "hint": "Add tags here if you believe that seeing this Destination means that we're almost certainly observing activity of the specified purpose",
+    "tags": [
+      "Redirect",
+      "ExternalLink",
+      "VideoStream",
+      "IPAddressCheck",
+      "BrowserLaunch",
+      "Download",
+      "NewTab",
+      "NewPage",
+      "LogoStorage",
+      "WebsiteLoading",
+      "BackgroundActivity",
+      "Ads",
+      "UI",
+      "Assets",
+      "Analytics",
+      "Tracking",
+      "EmailAttachment",
+      "EmailAttachmentDownload",
+      "EmailAttachmentPreview"
+    ]
+  },
+  {
+    "category": "impactsTags",
+    "humanReadableCategory": "Impacts",
+    "hint": "Add tags here if you believe that seeing this Destination means that we're almost always observing the specified impact",
+    "tags": [
+      "CredentialsEntered",
+      "BrowserExtensionInstalled",
+      "Execution",
+      "Exfiltration"
+    ]
+  },
+  {
+    "category": "threatTags",
+    "humanReadableCategory": "Threat",
+    "hint": "Add tags here if you believe that this Destination is actively causing the threat type specified",
+    "tags": [
+      "Phishing",
+      "PUPs",
+      "BrowserExtension",
+      "Trojan",
+      "Stealer"
+    ]
+  },
+  {
+    "category": "attackVectorTags",
+    "humanReadableCategory": "Attack Vector",
+    "hint": "Add tags here if you believe that seeing this Destination means that it is acting as this Attack Vector",
+    "tags": [
+      "FileSharingPlatform",
+      "Redirect",
+      "WebStore"
+    ]
+  },
+  {
+    "category": "securityTags",
+    "humanReadableCategory": "Security",
+    "hint": "Add tags here if you believe that seeing this Destination means that the specified tag is true",
+    "tags": [
+      "FileAnalysis",
+      "LinkAnalysis",
+      "Authentication",
+      "SuccessfulAuthentication",
+      "Captcha",
+      "CRLCheck",
+      "CTLCheck",
+      "OCSPCheck"
+    ]
+  },
+  {
+    "category": "associatedAppOrServiceTags",
+    "humanReadableCategory": "Associated App",
+    "hint": "Add tags here if you believe that seeing this Destination means that we're almost certainly observing traffic from a specific application",
+    "tags": [
+      "OneNote",
+      "Gmail",
+      "Protonmail",
+      "Adobe",
+      "Bitly",
+      "Buffly",
+      "GoogleIdentity",
+      "OneDrive",
+      "Twitter",
+      "Feedproxy",
+      "Microsoft365Email",
+      "Facebook",
+      "Slack",
+      "GoogleHangouts",
+      "Firefox",
+      "ChromeBrowser",
+      "ChromeExtension",
+      "MimecastURLProtect",
+      "GoogleSafeBrowsing",
+      "GoogleRecaptcha",
+      "OpenText",
+      "AdobeSpark",
+      "Milanote",
+      "Flipsnack",
+      "SharePointOnline",
+      "FirebaseStorage",
+      "WaybackMachine",
+      "MicrosoftOutlook",
+      "AmazonAWS"
+    ]
+  },
+  {
+    "category": "platformHintTags",
+    "humanReadableCategory": "Platform Hint",
+    "hint": "Add tags here if you believe that seeing this Destination means that we're almost certainly observing traffic from a specific operating system",
+    "tags": [
+      "Apple",
+      "Mac",
+      "OSX",
+      "iOS",
+      "Windows",
+      "Windows10"
+    ]
+  }
+]

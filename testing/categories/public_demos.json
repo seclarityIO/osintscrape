@@ -1,0 +1,53 @@
+{
+  "samples": [
+    {
+      "sample_id": "0805835393a8458b9b3704d17519d8eb",
+      "owner": "modified@seclarity.io",
+      "desired_output": {
+        "verdict": "Impact",
+        "confidence": "High",
+        "attack_type": "Phishing",
+        "targeted_brand": "Microsoft Corporation",
+        "Impact": [
+          "grapyvision.com:443"
+        ],
+        "Malicious Activity": [
+          "amused-mighty-store.glitch.me:443"
+        ],
+        "Suspicious Activity": [
+        ],
+        "Attack Vector": [
+          "Microsoft OneDrive -- Link Loading Behavior"
+        ]
+      },
+      "expected_output": {
+        "verdict": "Malicious Activity",
+        "confidence": "Medium-High",
+        "attack_type": "Phishing",
+        "targeted_brand": "c1-onenote-15[.]cdn[.]office[.]net",
+        "Impact": [
+        ],
+        "Malicious Activity": [
+          "amused-mighty-store.glitch.me:443"
+        ],
+        "Suspicious Activity": [
+          "152.199.4.33:443",
+          "51.107.224.21:443",
+          "grapyvision.com:443",
+          "13.107.43.254:443",
+          "40.83.247.108:443"
+        ],
+        "Attack Vector": [
+          "skyapi.onedrive.live.com:443"
+        ],
+        "acceptable_result": "False",
+        "unacceptable_fields": [
+          "verdict",
+          "Impact",
+          "Suspicious Activity"
+        ]
+      },
+      "notes": "This is a manually-detonated sample where I submitted credentials and verified that they went to grapyvision. Right now I'm noticing that grapyvision is being treated as non-malicious, which is bad!"
+    }
+  ]
+}

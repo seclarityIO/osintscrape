@@ -1,0 +1,228 @@
+{
+  "samples": [
+    {
+      "sample_id": "3ff6020892784f6a96679d3e1495296b",
+      "owner": "modified@seclarity.io",
+      "desired_output": {
+        "verdict": "Attack Vector",
+        "confidence": "Medium",
+        "attack_type": "",
+        "targeted_brand": "",
+        "Impact": [
+        ],
+        "Malicious Activity": [
+        ],
+        "Suspicious Activity": [
+        ],
+        "Attack Vector": [
+          "wearemoneysmart.com:443"
+        ]
+      },
+      "expected_output": {
+        "verdict": "Attack Vector",
+        "confidence": "Medium",
+        "attack_type": "",
+        "targeted_brand": "",
+        "Impact": [
+        ],
+        "Malicious Activity": [
+        ],
+        "Suspicious Activity": [
+        ],
+        "Attack Vector": [
+          "wearemoneysmart.com:443"
+        ],
+        "acceptable_result": "True",
+        "unacceptable_fields": [
+        ]
+      },
+      "notes": "We need to get better at correctly identifying common assets, tracking, analytics, and other backend infrastructure."
+    },
+    {
+      "sample_id": "47c8177e59c144d0ac73aee978933867",
+      "owner": "modified@seclarity.io",
+      "desired_output": {
+        "verdict": "No Interesting Activity",
+        "confidence": "High",
+        "attack_type": "",
+        "targeted_brand": "",
+        "Impact": [
+        ],
+        "Malicious Activity": [
+        ],
+        "Suspicious Activity": [
+        ],
+        "Attack Vector": [
+        ]
+      },
+      "expected_output": {
+        "verdict": "Suspicious Activity",
+        "confidence": "Medium",
+        "attack_type": "",
+        "targeted_brand": "",
+        "Impact": [
+        ],
+        "Malicious Activity": [
+        ],
+        "Suspicious Activity": [
+          "server-13-226-36-76.ewr53.r.cloudfront.net:443"
+        ],
+        "Attack Vector": [
+        ],
+        "acceptable_result": "False",
+        "unacceptable_fields": [
+          "verdict",
+          "Suspicious Activity"
+        ]
+      }
+    },
+    {
+      "sample_id": "3dafec51beb04f51b896ae6645c7fce9",
+      "owner": "modified@seclarity.io",
+      "desired_output": {
+        "verdict": "No Interesting Activity",
+        "confidence": "High",
+        "attack_type": "",
+        "targeted_brand": "",
+        "Impact": [
+        ],
+        "Malicious Activity": [
+        ],
+        "Suspicious Activity": [
+        ],
+        "Attack Vector": [
+        ]
+      },
+      "expected_output": {
+        "verdict": "Suspicious Activity",
+        "confidence": "Medium",
+        "attack_type": "",
+        "targeted_brand": "",
+        "Impact": [
+        ],
+        "Malicious Activity": [
+        ],
+        "Suspicious Activity": [
+        ],
+        "Attack Vector": [
+        ],
+        "acceptable_result": "True",
+        "unacceptable_fields": [
+        ]
+      },
+      "notes": "We need to get better at correctly identifying common assets, tracking, analytics, and other backend infrastructure."
+    },
+    {
+      "sample_id": "231daa1767a14bf98995f24be9c5e472",
+      "owner": "modified@seclarity.io",
+      "desired_output": {
+        "verdict": "No Interesting Activity",
+        "confidence": "High",
+        "attack_type": "",
+        "targeted_brand": "",
+        "Impact": [
+        ],
+        "Malicious Activity": [
+        ],
+        "Suspicious Activity": [
+        ],
+        "Attack Vector": [
+        ]
+      },
+      "expected_output": {
+        "verdict": "Suspicious Activity",
+        "confidence": "Medium",
+        "attack_type": "",
+        "targeted_brand": "",
+        "Impact": [
+        ],
+        "Malicious Activity": [
+        ],
+        "Suspicious Activity": [
+          "myservion.ficsloanstat.com:443"
+        ],
+        "Attack Vector": [
+        ],
+        "acceptable_result": "False",
+        "unacceptable_fields": [
+          "verdict",
+          "attack_type",
+          "Malicious Activity"
+        ]
+      },
+      "notes": "This is very problematic. This site is a legitimate loan login portal. We're incorrectly identifying it as malicious."
+    },
+    {
+      "sample_id": "81d3024a09fd40b3afdfa8c13800859e",
+      "owner": "automatedSage@seclarity.io",
+      "desired_output": {
+        "verdict": "No Interesting Activity",
+        "confidence": "Medium",
+        "attack_type": "",
+        "targeted_brand": "",
+        "Impact": [
+        ],
+        "Malicious Activity": [
+        ],
+        "Suspicious Activity": [
+        ],
+        "Attack Vector": [
+        ]
+      },
+      "expected_output": {
+        "verdict": "No Interesting Activity",
+        "confidence": "Medium",
+        "attack_type": "",
+        "targeted_brand": "",
+        "Impact": [
+        ],
+        "Malicious Activity": [
+        ],
+        "Suspicious Activity": [
+        ],
+        "Attack Vector": [
+        ]
+      },
+      "notes": ""
+    },
+    {
+      "sample_id": "486b8cff38df43ed878d54249af4c8d5",
+      "owner": "modified@seclarity.io",
+      "desired_output": {
+        "verdict": "No Interesting Activity",
+        "confidence": "Medium",
+        "attack_type": "",
+        "targeted_brand": "",
+        "Impact": [
+        ],
+        "Malicious Activity": [
+        ],
+        "Suspicious Activity": [
+        ],
+        "Attack Vector": [
+        ]
+      },
+      "expected_output": {
+        "verdict": "Suspicious Activity",
+        "confidence": "Medium",
+        "attack_type": "",
+        "targeted_brand": "",
+        "Impact": [
+        ],
+        "Malicious Activity": [
+        ],
+        "Suspicious Activity": [
+          "51.104.15.252:443"
+        ],
+        "Attack Vector": [
+        ],
+        "acceptable_result": "False",
+        "unacceptable_fields": [
+          "verdict",
+          "Suspicious Activity"
+        ]
+      },
+      "notes": "This was me (via the manual sandbox) visiting hackernews and reading a story. It was still uploaded to modified's account, though."
+    }
+  ]
+}

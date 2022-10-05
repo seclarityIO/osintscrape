@@ -1,0 +1,297 @@
+{
+  "samples": [
+    {
+      "sample_id": "c288498f215d40c69c7f7d4e7b111792",
+      "owner": "modified@seclarity.io",
+      "desired_output": {
+        "verdict": "Malicious Activity",
+        "confidence": "High",
+        "attack_type": "Phishing",
+        "targeted_brand": "snapchat[.]com",
+        "Impact": [
+        ],
+        "Malicious Activity": [
+          "snap-chat.tel:443"
+        ],
+        "Suspicious Activity": [
+        ],
+        "Attack Vector": [
+        ]
+      },
+      "expected_output": {
+        "verdict": "Impact",
+        "confidence": "Medium",
+        "attack_type": "Phishing",
+        "targeted_brand": "DNStination Inc.",
+        "Impact": [
+          "snap-chat.tel:443"
+        ],
+        "Malicious Activity": [
+          "snapnet-cdn.storage.googleapis.com:443"
+        ],
+        "Suspicious Activity": [
+          "us-central1-gcp.api.snapchat.com:ICMP"
+        ],
+        "Attack Vector": [
+        ],
+        "acceptable_result": "False",
+        "unacceptable_fields": [
+          "verdict",
+          "Impact",
+          "Malicious Activity",
+          "Suspicious Activity"
+        ]
+      },
+      "notes": "This is an automatically-detonated sample where (obviously) nobody submitted credentials. The snapchat Attack Vector is wrong because it happened AFTER the site was loading..."
+    },
+    {
+      "sample_id": "d6218cab37d64d4ea1962e2e490644ff",
+      "owner": "modified@seclarity.io",
+      "desired_output": {
+        "verdict": "Impact",
+        "confidence": "High",
+        "attack_type": "Phishing",
+        "targeted_brand": "",
+        "Impact": [
+          "pickledobey.net:443"
+        ],
+        "Malicious Activity": [
+          "pickledobey.net:443"
+        ],
+        "Suspicious Activity": [
+        ],
+        "Attack Vector": [
+        ]
+      },
+      "expected_output": {
+        "verdict": "Malicious Activity",
+        "confidence": "Medium",
+        "attack_type": "Phishing",
+        "targeted_brand": "",
+        "Impact": [
+        ],
+        "Malicious Activity": [
+          "pickledobey.net:443",
+          "myservion.ficsloanstat.com:443"
+        ],
+        "Suspicious Activity": [
+        ],
+        "Attack Vector": [
+        ],
+        "acceptable_result": "False",
+        "unacceptable_fields": [
+          "verdict",
+          "Impact",
+          "Malicious Activity"
+        ]
+      },
+      "notes": "This is the manually-detonated version of this sample (still uploaded to modified, though) where I submitted my credentials to the site too (I validated that they went to the same site). There is login CSS hosted on the ficsloanstat site, but it's really just their actual login form being abused. It should NOT be labeled as malicious."
+    },
+    {
+      "sample_id": "8d3ea46455f642feb57c0d441bf27f51",
+      "owner": "modified@seclarity.io",
+      "desired_output": {
+        "verdict": "Malicious Activity",
+        "confidence": "High",
+        "attack_type": "Phishing",
+        "targeted_brand": "www[.]itau[.]com[.]br",
+        "Impact": [
+        ],
+        "Malicious Activity": [
+          "faturamagaluabril.com:443"
+        ],
+        "Suspicious Activity": [
+        ],
+        "Attack Vector": [
+        ]
+      },
+      "expected_output": {
+        "verdict": "Malicious Activity",
+        "confidence": "Medium-High",
+        "attack_type": "Phishing",
+        "targeted_brand": "",
+        "Impact": [
+        ],
+        "Malicious Activity": [
+          "faturamagaluabril.com:443"
+        ],
+        "Suspicious Activity": [
+        ],
+        "Attack Vector": [
+        ],
+        "acceptable_result": "True",
+        "unacceptable_fields": [
+        ]
+      },
+      "notes": "This is an automatically-detonated version of a phishing site that targets ITAU. Ideally, though, we want to correctly identify the targeted brand."
+    },
+    {
+      "sample_id": "bb79268c80744d1a9c11e782f82227ea",
+      "owner": "modified@seclarity.io",
+      "desired_output": {
+        "verdict": "Impact",
+        "confidence": "High",
+        "attack_type": "Phishing",
+        "targeted_brand": "",
+        "Impact": [
+          "espaceclientnetflix.com:443"
+        ],
+        "Malicious Activity": [
+        ],
+        "Suspicious Activity": [
+        ],
+        "Attack Vector": [
+        ]
+      },
+      "expected_output": {
+        "verdict": "Impact",
+        "confidence": "Medium",
+        "attack_type": "Phishing",
+        "targeted_brand": "",
+        "Impact": [
+        ],
+        "Malicious Activity": [
+          "espaceclientnetflix.com:443"
+        ],
+        "Suspicious Activity": [
+        ],
+        "Attack Vector": [
+        ],
+        "acceptable_result": "True",
+        "unacceptable_fields": [
+          "targeted_brand",
+          "Impact"
+        ]
+      },
+      "notes": "This is a manually-detonated version of a phishing site that targets Netflix. I DID enter credentials, and they went to the phishing site."
+    },
+    {
+      "sample_id": "31a73c8a158642549565c21866f6b2b0",
+      "owner": "modified@seclarity.io",
+      "desired_output": {
+        "verdict": "Impact",
+        "confidence": "High",
+        "attack_type": "Phishing",
+        "targeted_brand": "",
+        "Impact": [
+          "cmauth3tb.xyz:80"
+        ],
+        "Malicious Activity": [
+        ],
+        "Suspicious Activity": [
+        ],
+        "Attack Vector": [
+        ]
+      },
+      "expected_output": {
+        "verdict": "Malicious Activity",
+        "confidence": "Medium",
+        "attack_type": "",
+        "targeted_brand": "",
+        "Impact": [
+        ],
+        "Malicious Activity": [
+          "cmauth3tb.xyz:80"
+        ],
+        "Suspicious Activity": [
+        ],
+        "Attack Vector": [
+        ],
+        "acceptable_result": "False",
+        "unacceptable_fields": [
+          "verdict",
+          "Impact",
+          "confidence",
+          "Suspicious Activity"
+        ]
+      },
+      "notes": "This is a manually-detonated version of a phishing site that targets Wells Fargo. I DID enter credentials, and they went to the phishing site. We completely don't identify this one correctly."
+    },
+    {
+      "sample_id": "1def237f99564e7c9de3dc24420398c9",
+      "owner": "modified@seclarity.io",
+      "desired_output": {
+        "verdict": "Impact",
+        "confidence": "High",
+        "attack_type": "Phishing",
+        "targeted_brand": "",
+        "Impact": [
+          "mindapfer.duckdns.org:443"
+        ],
+        "Malicious Activity": [
+          "runn1rnl8xzmqeh0kvov.web.app:443",
+          "document.shared-release.workers.dev:443"
+        ],
+        "Suspicious Activity": [
+        ],
+        "Attack Vector": [
+        ]
+      },
+      "expected_output": {
+        "verdict": "Malicious Activity",
+        "confidence": "High",
+        "attack_type": "Phishing",
+        "targeted_brand": "Microsoft Corporation",
+        "Impact": [
+          "document.shared-release.workers.dev:443"
+        ],
+        "Malicious Activity": [
+          "runn1rnl8xzmqeh0kvov.web.app:443",
+          "mindapfer.duckdns.org:443"
+        ],
+        "Suspicious Activity": [
+        ],
+        "Attack Vector": [
+        ],
+        "acceptable_result": "True",
+        "unacceptable_fields": [
+          "Impact"
+        ]
+      },
+      "notes": "This is a manually-detonated version of a phishing site that targets Microsoft. I DID enter credentials, and they went to the duckdns site, not the workers.dev site."
+    },
+    {
+      "sample_id": "0805835393a8458b9b3704d17519d8eb",
+      "owner": "modified@seclarity.io",
+      "desired_output": {
+        "verdict": "Impact",
+        "confidence": "High",
+        "attack_type": "Phishing",
+        "targeted_brand": "Microsoft Corporation",
+        "Impact": [
+          "login.mcrsftsvm-app.digital:443"
+        ],
+        "Malicious Activity": [
+          "www.mcrsftsvm-app.digital:443",
+          "ahinsuriance.com:443"
+        ],
+        "Suspicious Activity": [
+        ],
+        "Attack Vector": [
+        ]
+      },
+      "expected_output": {
+        "verdict": "Malicious Activity",
+        "confidence": "High",
+        "attack_type": "Phishing",
+        "targeted_brand": "",
+        "Impact": [
+        ],
+        "Malicious Activity": [
+          "www.mcrsftsvm-app.digital:443",
+          "ahinsuriance.com:443",
+          "login.mcrsftsvm-app.digital:443"
+        ],
+        "Suspicious Activity": [
+        ],
+        "Attack Vector": [
+        ],
+        "acceptable_result": "False",
+        "unacceptable_fields": [
+          "Impact"
+        ]
+      },
+      "notes": "This is a manually-detonated version of a phishing site that targets Microsoft. I DID enter credentials, and I believe that they went to the login subdomain of the micrsftsvm site."
+    }
+  ]
+}

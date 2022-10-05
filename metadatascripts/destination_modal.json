@@ -1,0 +1,181 @@
+{
+  "type": "modal",
+  "callback_id": "destination-metadata",
+  "title": {
+    "type": "plain_text",
+    "text": "Destination Details",
+    "emoji": true
+  },
+  "submit": {
+    "type": "plain_text",
+    "text": "Add",
+    "emoji": true
+  },
+  "close": {
+    "type": "plain_text",
+    "text": "Cancel",
+    "emoji": true
+  },
+  "blocks": [
+    {
+      "type": "section",
+      "text": {
+        "type": "mrkdwn",
+        "text": "Enter any details you know about the Destination here. Only `Title` and `Description` fields are *required*."
+      }
+    },
+    {
+      "type": "input",
+      "element": {
+        "type": "plain_text_input",
+        "action_id": "destination_title"
+      },
+      "label": {
+        "type": "plain_text",
+        "text": "Title",
+        "emoji": true
+      }
+    },
+    {
+      "type": "context",
+      "elements": [
+        {
+          "type": "plain_text",
+          "text": "Hint: write something clear and concise that you want users to see.",
+          "emoji": false
+        }
+      ]
+    },
+    {
+      "type": "input",
+      "element": {
+        "type": "plain_text_input",
+        "multiline": true,
+        "action_id": "destination_description"
+      },
+      "label": {
+        "type": "plain_text",
+        "text": "Description",
+        "emoji": true
+      }
+    },
+    {
+      "type": "context",
+      "elements": [
+        {
+          "type": "plain_text",
+          "text": "Hint: Tell the user what this Destination is, if there's any known ambiguity, and what they should look for before or after this Destination in their sample.",
+          "emoji": false
+        }
+      ]
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "header",
+      "text": {
+        "type": "plain_text",
+        "text": "Relevance",
+        "emoji": true
+      }
+    },
+    {
+      "type": "input",
+      "optional": true,
+      "element": {
+        "type": "radio_buttons",
+        "options": [
+          {
+            "text": {
+              "type": "plain_text",
+              "text": "This Destination is known to be uninteresting",
+              "emoji": true
+            },
+            "value": "knownUninteresting"
+          },
+          {
+            "text": {
+              "type": "plain_text",
+              "text": "This Destination is known to be malicious",
+              "emoji": true
+            },
+            "value": "knownBad"
+          },
+          {
+            "text": {
+              "type": "plain_text",
+              "text": "This Destination isn't bad itself, but it frequently appears near bad activity",
+              "emoji": true
+            },
+            "value": "seenNearBad"
+          }
+        ],
+        "action_id": "relevance_choice"
+      },
+      "label": {
+        "type": "plain_text",
+        "text": "How would you characterize this Destination from a security perspective?",
+        "emoji": true
+      }
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "header",
+      "text": {
+        "type": "plain_text",
+        "text": "Tags",
+        "emoji": true
+      }
+    },
+    {
+      "type": "context",
+      "elements": [
+        {
+          "type": "mrkdwn",
+          "text": "This section is `optional`"
+        }
+      ]
+    },
+    {
+      "type": "input",
+      "optional": true,
+      "element": {
+        "type": "multi_static_select",
+        "placeholder": {
+          "type": "plain_text",
+          "text": "Select one or more options",
+          "emoji": true
+        },
+        "options": [
+          {
+            "text": {
+              "type": "plain_text",
+              "text": "*this is plain_text text*",
+              "emoji": true
+            },
+            "value": "value-0"
+          }
+        ],
+        "action_id": "multi_static_select-action"
+      },
+      "label": {
+        "type": "plain_text",
+        "text": "Destination Tags",
+        "emoji": true
+      }
+    },
+    {
+      "type": "context",
+      "elements": [
+        {
+          "type": "plain_text",
+          "text": "Hint: Add tags here if you think this Destination falls into the categories available.",
+          "emoji": true
+        }
+      ]
+    }
+  ]
+}
